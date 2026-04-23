@@ -5,7 +5,6 @@ body {
 }
 
 ul {
-    border: 2px solid red;
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -19,32 +18,104 @@ li {
     font-family: 'Lexend Deca';
 }
 
+/* borda pra organizar o layout */
+.header, .logo, .sectiontwo, 
+.subtexto, .title, .img, .subclass, .titletwo,
+.caixas {
+     border: 2px solid red;
+}
+
+.subtexto, .title, .logo,
+.titletwo, .description {
+   font-family: 'Lexend Deca';
+}
 
 .header {
-    border: 2px solid red;
     background-color: #1e2a56;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
 }
 
 .logo{
     padding: 16px;
-    font-family: 'Lexend Deca', sans-serif;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
     color: white;
+    margin: 20px 10px 20px 20px;
 }
 
+/* ate aqui ta ok acho, as coisas do header tao funcionando, o problema comeca na secao 2 */
+
 .sectiontwo {
-    border: 2px solid red;
     display: flex;
-    flex-direction: column;
-    background-color: lightblue;
+    flex-wrap: wrap;
+    background-color: #1e2a56;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
 }
 
 .subtexto {
+    color: white;
+    font-weight: 200;
     text-align: left;
-    flex: 1;
+    flex-wrap: wrap;
+    max-width: 320px;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 52px;
+    color: white;
+}
+
+.img {
+    width: 400px;
+    height: 300px;
+    background-color: lightblue;
+}
+
+.subclass {
+    padding: 20px;
+}
+
+/* secao 2 deu certo, vou comecar a 3. ainda preciso descobrir como fazer os blocos com legenda */
+
+.sectionthree {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ background-color: #65BDE6;
+ padding: 20px;
+}
+
+.titletwo {
+    margin: 10px;
+}
+
+.caixas {
+    display: flex;
+   justify-content: center;
+}
+
+.caixa-um, .caixa-dois,
+.caixa-tres, .caixa-quatro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: white;
+    border: 3px solid darkblue;
+    margin: 10px;
 }
