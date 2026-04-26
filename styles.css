@@ -2,6 +2,8 @@
 body {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 ul {
@@ -19,14 +21,14 @@ li {
 }
 
 /* borda pra organizar o layout */
-.header, .logo, .sectiontwo, 
+/* .header, .logo, .sectiontwo, 
 .subtexto, .title, .img, .subclass, .titletwo,
-.caixas {
+.caixas, .sectionfour, .quote {
      border: 2px solid red;
-}
+} */
 
 .subtexto, .title, .logo,
-.titletwo, .description {
+.titletwo, .description, .quote, .footer {
    font-family: 'Lexend Deca';
 }
 
@@ -74,7 +76,7 @@ li {
 
 .img {
     width: 400px;
-    height: 300px;
+    height: 250px;
     background-color: lightblue;
 }
 
@@ -101,7 +103,14 @@ li {
    justify-content: center;
 }
 
-.caixa-um, .caixa-dois,
+.caixa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+}
+/* .caixa-um, .caixa-dois,
 .caixa-tres, .caixa-quatro {
     display: flex;
     flex-direction: column;
@@ -109,7 +118,7 @@ li {
     text-align: center;
     padding: 10px;
     margin: 10px;
-}
+} */
 
 .box {
     width: 100px;
@@ -118,4 +127,33 @@ li {
     background-color: white;
     border: 3px solid darkblue;
     margin: 10px;
+}
+
+/* Section four */
+
+.sectionfour {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.quote {
+    color: gray;
+    font-size: 24px;
+    max-width: 400px;
+    padding: 16px;
+    margin: 20px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #1e2a56;
+    color: lightblue;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
 }
